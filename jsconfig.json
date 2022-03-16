@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/root/*": ["*"],
+      "@/src/*": ["src/*"],
+      "@/pages/*": ["pages/*"],
+      "@/styles/*": ["styles/*"],
+      "@/images/*": ["assets/images/*"],
+      "@/components/*": ["src/components/*"],
+      "@/hooks/*": ["src/customHooks/*"],
+      "@/hocs/*": ["src/HOCs/*"],
+      "@/tabs/*": ["src/components/tabs/*"],
+      "@/UIElements/*": ["src/components/UIElements/*"],
+      "@/AccentIcons/*": ["src/components/AccentIcons/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/store/*": ["store/*"],
+      "@/deepLinks/*": ["src/common/deepLinks/*"],
+      "@/common/*": ["src/common/*"],
+      "@/TabIcons/*": ["src/components/Tabs/Content/icons/*"]
+    }
+  }
+}

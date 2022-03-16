@@ -1,0 +1,66 @@
+{
+  "name": "course-webview",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9999",
+    "dev-prod": "NEXT_PUBLIC_ENV=PROD npm run dev",
+    "dev-preprod": "NEXT_PUBLIC_ENV=PREPROD npm run dev",
+    "dev-staging": "NEXT_PUBLIC_ENV=STAGING npm run dev",
+    "build": "next build",
+    "analyze-build-prod": "NEXT_PUBLIC_ENV=PROD NEXT_PUBLIC_ANALYZE=TRUE npm run build",
+    "analyze-build-preprod": "NEXT_PUBLIC_ENV=PREPROD NEXT_PUBLIC_ANALYZE=TRUE npm run build",
+    "analyze-build-staging": "NEXT_PUBLIC_ENV=STAGING NEXT_PUBLIC_ANALYZE=TRUE npm run build",
+    "start": "next start -p 8888",
+    "start-prod": "NEXT_PUBLIC_ENV=PROD npm run start",
+    "start-preprod": "NEXT_PUBLIC_ENV=PREPROD npm run start",
+    "start-staging": "NEXT_PUBLIC_ENV=STAGING npm run start",
+    "lint": "next lint",
+    "deploy": "next build && scp -r -i  ~/.ssh/id_rsa .next .env public package.json next.config.js ecosystem.config.js wl-web-2@staging.classplus.co:course-webview2.staging.classplus.co",
+    "deploy-prod": "NEXT_PUBLIC_ENV=PROD npm run deploy",
+    "deploy-preprod": "NEXT_PUBLIC_ENV=PREPROD npm run deploy",
+    "deploy-staging": "NEXT_PUBLIC_ENV=STAGING npm run deploy",
+    "prepare": "husky install",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "i18next": "^21.6.11",
+    "i18next-browser-languagedetector": "^6.1.3",
+    "i18next-http-backend": "^1.3.2",
+    "i18next-parser": "^5.4.0",
+    "next": "12.0.8",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hot-toast": "^2.2.0",
+    "react-i18next": "^11.15.5",
+    "react-redux": "^7.2.6",
+    "react-slick": "^0.28.1",
+    "react-swipeable": "^6.2.0",
+    "redux": "^4.1.2",
+    "redux-saga": "^1.1.3",
+    "sharp": "^0.29.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.1.0",
+    "@welldone-software/why-did-you-render": "^6.2.3",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.3",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "sass": "^1.49.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier --write . && git add -A ."
+    }
+  }
+}
