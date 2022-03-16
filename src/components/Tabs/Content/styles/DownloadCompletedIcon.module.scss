@@ -1,0 +1,9 @@
+@import "../../../../scss/main";
+
+.downloadCompletedIcon {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #5bb46a;
+  @include flex-full(center, center);
+}

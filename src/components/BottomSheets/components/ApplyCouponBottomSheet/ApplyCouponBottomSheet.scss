@@ -1,0 +1,168 @@
+@import "../../../../scss/main";
+
+.couponModalHeader {
+  // @include flex-full(center, center);
+
+  &--title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: $color-text-black;
+    // margin-left: 12px;
+  }
+}
+
+.enterCoupon {
+  padding: 12px 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.enterCouponField {
+  border: none;
+  outline: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #999999;
+}
+
+.enterCouponButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  white-space: nowrap;
+  color: $color-app-accent;
+}
+
+.CouponModalLabel2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: $color-text-black;
+  margin: 24px auto 16px;
+}
+
+.CouponListItem {
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+}
+.CouponModalLabel {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 150% */
+
+  color: $color-text-black;
+  // margin: 24px auto 16px;
+}
+
+.CouponModalRow1 {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CouponModalRow2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-top: 1px dashed #e5e5e5;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 8px 0;
+  align-items: center;
+}
+
+.CouponModalName {
+  cursor: default;
+  font-style: normal;
+  /* font-weight: normal; */
+  /* font-weight: 500; */
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #777777;
+}
+
+.CouponModalValid {
+  cursor: default;
+  font-style: normal;
+  /* font-weight: 100; */
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #777777;
+  display: flex;
+  align-items: center;
+
+  &--expire {
+    margin-left: 8px;
+  }
+}
+
+.CouponModalCode {
+  cursor: default;
+  background-color: rgba(240, 169, 0, 0.05);
+  border: 1px dashed #f5a623;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 6px 11px;
+
+  font-style: normal;
+  /* font-weight: 700; */
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+
+  color: $color-text-black;
+}
+
+.CouponModalLink {
+  cursor: pointer;
+  font-style: normal;
+  /* font-weight: 700; */
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: capitalize;
+
+  color: $color-app-accent;
+}

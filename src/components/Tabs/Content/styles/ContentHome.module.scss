@@ -1,0 +1,17 @@
+@import "../../../../scss/main";
+
+.contentHome {
+  &__searchBar {
+    padding: 16px;
+    background: $color-pure-white;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    margin-bottom: 8px;
+    &--folderRoute {
+      top: 0;
+    }
+  }
+  &__content {
+  }
+}

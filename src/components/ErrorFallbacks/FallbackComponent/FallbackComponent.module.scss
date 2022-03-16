@@ -1,0 +1,19 @@
+@import "../../../scss/main";
+
+.fallbackComponent {
+  padding: 16px;
+  background-color: $color-pure-white;
+  height: 100%;
+  text-align: center;
+  padding-top: 90px;
+  h1 {
+    @include font-medium(600);
+    color: $color-text-black;
+    margin-top: 20px;
+  }
+  p {
+    @include font-small;
+    color: $color-text-grey;
+    margin: 8px 28px 16px;
+  }
+}

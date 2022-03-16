@@ -1,0 +1,49 @@
+@import "../../../../scss/main";
+
+.AnnouncementsAttachments {
+  &__Header {
+    display: flex;
+
+    &__text {
+      margin-left: 12px;
+      align-items: center;
+      display: flex;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__Body {
+  }
+
+  &__List {
+    display: flex;
+
+    &__Left {
+      display: flex;
+      width: 10%;
+    }
+
+    &__Middle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+      display: flex;
+      width: 80%;
+      color: #3c4852;
+      align-items: center;
+      margin-left: 19px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: pre-wrap;
+    }
+
+    &__Right {
+      display: flex;
+      width: 10%;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

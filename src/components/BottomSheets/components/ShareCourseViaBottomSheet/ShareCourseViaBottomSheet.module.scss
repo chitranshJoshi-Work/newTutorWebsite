@@ -1,0 +1,64 @@
+@import "../../../../scss/main";
+
+.ShareCourseViaBottomSheet {
+  &__divider {
+    @include customFont(12px, $lineHeight-small, 300);
+    color: $color-overlay-black;
+    text-align: center;
+  }
+
+  &__socialIcons {
+    @include flex-justify(space-between);
+    margin: 16px 0;
+
+    &__singleIcon {
+      @include flex-dir-col;
+      align-items: center;
+
+      p {
+        @include customFont(12px, 15px, normal);
+        color: $color-text-grey;
+      }
+
+      &__image {
+        border-radius: 20%;
+        height: 40px;
+        width: 40px;
+        background: #f0f4f7;
+        @include flex-full(center, center);
+
+        &__para {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  &__UrlCopy {
+    padding: 16px;
+    margin: 16px 0;
+    border: 1px px solid $color-hr-grey;
+    box-sizing: border-box;
+    border-radius: 4px;
+    @include flex-align(center);
+    border: 1px solid $color-hr-grey;
+    border-radius: 4px;
+    justify-content: space-between;
+
+    p {
+      width: 85%;
+      @include customFont($font-small, $lineHeight-small, normal);
+      color: $color-text-black;
+      @include text-ellipsis;
+    }
+
+    button {
+      @include customFont($font-small, $lineHeight-small, 500);
+      @include flex-align(center);
+      text-align: right;
+      color: $color-app-accent;
+      background: transparent;
+      border: none;
+    }
+  }
+}

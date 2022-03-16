@@ -1,0 +1,34 @@
+// CONTAINS ALL THE FONTS CONFIGURATION
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+@mixin line-height($lHt) {
+  line-height: $lHt;
+}
+@mixin font-wt($wt) {
+  font-weight: $wt;
+}
+@mixin customFont($fSize, $lHt, $wt: 400) {
+  font-size: $fSize;
+  line-height: $lHt;
+  font-weight: $wt;
+}
+@mixin font-xxs($wt: 400) {
+  @include customFont($font-xxs, $lineHeight-xxs, $wt);
+}
+@mixin font-xs($wt: 400) {
+  @include customFont($font-xs, $lineHeight-xs, $wt);
+}
+@mixin font-small($wt: 400) {
+  @include customFont($font-small, $lineHeight-small, $wt);
+}
+@mixin font-medium($wt: 400) {
+  @include customFont($font-medium, $lineHeight-medium, $wt);
+}
+@mixin font-xm($wt: 400) {
+  @include customFont($font-xm, $lineHeight-xm, $wt);
+}
+@mixin font-large($wt: 400) {
+  @include customFont($font-large, $lineHeight-large, $wt);
+}

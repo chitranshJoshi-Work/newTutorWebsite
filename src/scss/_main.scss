@@ -1,0 +1,48 @@
+// IMPORT THE MAIN.SCSS IN YOUR STYLES TO USE ALL BELOW FILE CLASSES
+
+@import "./variables";
+@import "./fonts";
+@import "./flex";
+
+@mixin hide-scrollbar() {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin input-noBorder {
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+@mixin user-select-none {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin text-ellipsis($numOfLines: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $numOfLines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
+}
+
+@keyframes slide-in {
+  from {
+    bottom: -100vh;
+  }
+  to {
+    bottom: var(--finalPosition);
+  }
+}

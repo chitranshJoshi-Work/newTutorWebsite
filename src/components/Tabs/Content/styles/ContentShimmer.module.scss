@@ -1,0 +1,27 @@
+@import "../../../../scss/main";
+
+.contentShimmer {
+  &__heading {
+    height: 24px;
+    width: 100%;
+  }
+  &__listItem {
+    padding: 16px 0;
+    border-bottom: 1px solid $color-stroke-grey;
+    @include flex-justify(space-between);
+    &__thumbnail {
+      width: 80px;
+      min-width: 80px;
+      height: 60px;
+    }
+    &__content {
+      margin-left: 16px;
+      width: 100%;
+      @include flex-dir-col;
+      @include flex-justify(space-between);
+      &__p {
+        height: 20px;
+      }
+    }
+  }
+}

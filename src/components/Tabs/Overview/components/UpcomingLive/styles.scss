@@ -1,0 +1,174 @@
+@import "../../../../../scss/main";
+
+.UpcomingLive {
+  padding: 16px;
+  width: 100vw;
+
+  background-color: #021927;
+
+  margin-bottom: 8px;
+
+  &__ModalHeader {
+    @include flex-align(center);
+
+    span {
+      margin-right: 10px !important;
+    }
+  }
+  &__headings {
+    @include flex-justify(space-between);
+
+    &__buttonHeadings {
+      cursor: pointer;
+      font-style: normal;
+      color: $color-pure-white;
+      @include font-size($font-small);
+      @include line-height(18px);
+      background-color: transparent;
+      border: none;
+      outline: none;
+      @include flex-align(center);
+      text-align: right;
+    }
+  }
+  h2,
+  h3 {
+    color: #ffffff;
+  }
+
+  h2 {
+    margin-bottom: 4px;
+  }
+
+  &__Body {
+    margin-top: 16px;
+
+    &__Dots {
+      position: relative !important;
+      bottom: 0 !important;
+
+      li {
+        margin: 0 !important;
+      }
+
+      li button {
+        padding: 0 !important;
+      }
+
+      li button::before {
+        width: 20px;
+        height: 20px;
+        content: "•";
+        text-align: center;
+        opacity: 0.8 !important;
+        color: #f2f2f2 !important;
+      }
+
+      .slick-active button::before {
+        color: #ffffff !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+.LiveClassCard {
+  padding: 16px;
+  background-color: #ffffff;
+  margin: 0 2px;
+
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  // box-shadow: 0px 2px 4px 0 #f2f2f2;
+  border-radius: 8px;
+
+  &__Tags {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+    &--Emblem {
+      // font-style: normal;
+      // font-weight: 500;
+      // font-size: 10px;
+      // line-height: 16px;
+      // /* identical to box height, or 160% */
+
+      // display: flex;
+      // align-items: center;
+      // text-transform: uppercase;
+      // font-feature-settings: "pnum" on, "lnum" on;
+
+      // /* White */
+
+      // color: #ffffff;
+
+      // background: #ff4058;
+      // border-radius: 11px;
+      // padding: 2px 7px 2px 0px;
+
+      overflow: hidden;
+    }
+  }
+
+  &__Title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    /* Black */
+
+    color: #3c4852;
+
+    margin-bottom: 32px;
+
+    @include text-ellipsis(1);
+  }
+
+  &__Bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--Time {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      display: flex;
+      align-items: center;
+
+      /* Black */
+
+      color: #3c4852;
+
+      span {
+        margin-left: 8px;
+      }
+    }
+    &--CTA {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+      text-align: right;
+
+      color: $color-app-accent;
+
+      outline: none;
+      border: none;
+
+      background-color: transparent;
+
+      &:disabled {
+        color: #cccccc;
+      }
+    }
+  }
+}

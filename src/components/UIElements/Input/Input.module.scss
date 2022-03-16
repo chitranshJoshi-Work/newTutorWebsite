@@ -1,0 +1,30 @@
+@import "../../../scss/main";
+
+.inputContainer {
+  @include flex-align(center);
+  border: 1px solid $color-stroke-grey;
+  border-radius: 8px;
+  padding: 15px 19px;
+
+  // img {
+  //   margin-right: 16px;
+  // }
+  &__icon {
+    @include flex-align(center);
+    margin-right: 16px;
+  }
+
+  input {
+    width: 100%;
+    // margin-left: 20px;
+    @include font-small;
+    color: $color-text-black;
+    border: none;
+    outline: none;
+    @include input-noBorder;
+    &::placeholder {
+      color: $color-text-grey;
+    }
+    user-select: text !important;
+  }
+}

@@ -1,0 +1,121 @@
+@import "../scss/main";
+
+.layout {
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  &__header {
+    padding: 16px 20px 16px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    @include flex-align(center);
+    color: $color-text-black;
+    background: $color-pure-white;
+
+    // transition: margin-top 0.3s linear;
+
+    &--accent {
+      background: $color-app-accent;
+      color: $color-pure-white;
+    }
+
+    h1 {
+      width: 100%;
+      @include font-medium;
+      margin: 0 18px 0 36px;
+      @include text-ellipsis;
+    }
+
+    span:nth-of-type(1) {
+      min-height: 16px;
+      min-width: 16px;
+    }
+
+    span:nth-of-type(2) {
+      min-height: 24px;
+      min-width: 24px;
+    }
+  }
+
+  &__content {
+    background: $color-hr-grey;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    @include hide-scrollbar;
+
+    // transition: height 0.3s linear;
+  }
+
+  &__footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    &__buyNow {
+      @include flex-full(space-between, center);
+      border-top: 1px solid $color-hr-grey;
+      background: $color-bg-navy;
+      padding: 16px 16px 24px;
+
+      &__price {
+        width: 40%;
+        color: $color-pure-white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        h3 {
+          @include font-xm(700);
+          min-width: 50px;
+        }
+
+        &__discount {
+          @include flex;
+          margin-top: 8px;
+
+          p {
+            white-space: pre;
+            text-decoration-line: line-through;
+            @include font-small(600);
+            min-width: 75px;
+            max-width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          span {
+            text-decoration-line: none;
+            @include font-xs;
+            color: $color-text-yellow;
+            margin-left: 8px;
+            white-space: pre;
+            min-width: 70px;
+            padding-left: 5px;
+            max-width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      &__button {
+        width: 50%;
+      }
+    }
+
+    &__recentActivity {
+      padding: 12px;
+      background: #fff7e4;
+    }
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

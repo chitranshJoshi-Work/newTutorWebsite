@@ -1,0 +1,33 @@
+@import "../../../../scss/main";
+
+.PaidInstallment {
+  @include flex-dir-col;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  margin-top: 32px;
+
+  &__image {
+    margin-top: 1rem;
+  }
+
+  &__heading {
+    @include customFont($font-medium, $lineHeight-medium, 600);
+    color: $color-text-black;
+  }
+
+  &__subtext {
+    @include customFont($font-small, $lineHeight-medium, normal);
+    text-align: center;
+    color: $color-text-black;
+
+    &__bold {
+      @include customFont($font-medium, $lineHeight-medium, 600);
+      color: $color-text-black;
+      display: inline-block;
+    }
+  }
+  p:last-of-type {
+    margin-bottom: 2rem;
+  }
+}

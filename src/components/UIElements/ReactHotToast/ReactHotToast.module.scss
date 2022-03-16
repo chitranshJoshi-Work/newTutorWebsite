@@ -1,0 +1,17 @@
+@import "../../../scss/main";
+
+.reactHotToast {
+  max-width: unset !important;
+  width: calc(100vw - 64px);
+  min-height: 48px;
+  padding: 12px 12px !important;
+  border-radius: 32px !important;
+  color: $color-pure-white !important;
+  @include font-medium();
+  &--success {
+    background-color: $toast-bg-green !important;
+  }
+  &--error {
+    background-color: $toast-bg-red !important;
+  }
+}

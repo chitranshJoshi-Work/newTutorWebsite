@@ -1,0 +1,64 @@
+// CONTAINS ALL THE DEFAULT COLORS, FONT SIZES etc...
+
+// DEFAULT COLORS
+$color-pure-white: #fff;
+$color-pure-black: #000;
+
+$color-classplus-blue: #009ae0;
+$color-app-accent: var(--appAccentColor);
+
+$color-text-black: #3c4852;
+$color-text-grey: #7a8b94;
+$color-text-red: #ff4058;
+$color-text-yellow: #fe9b0e;
+$color-bg-green: #1ab900;
+
+$color-stroke-grey: #f2f2f2;
+$color-stroke-red: #ffccd2;
+
+$color-hr-grey: #e5e5e5;
+
+$color-bg-blue: #5a5cd4;
+$color-bg-red: #f49898;
+$color-bg-navy: #021927;
+$color-bg-grey: #f6f8fa;
+$color-bg-green: #fbffec;
+$color-bg-darkgreen: #f1ffea;
+$color-bg-yellow: #f0a900;
+
+$toast-bg-green: rgba(82, 176, 98, 0.95);
+$toast-bg-red: rgba(255, 64, 88, 0.95);
+
+// FOR MODAL/POPUP BACKGROUNDS
+$color-overlay-black: rgba(0, 0, 0, 0.6);
+$color-modalbg-black: rgba(0, 0, 0, 0.7);
+
+// XTRA XTRA SMALL SIZE FONTS
+$font-xxs: 10px;
+$lineHeight-xxs: 16px;
+
+// XTRA SMALL SIZE FONTS
+$font-xs: 12px;
+$lineHeight-xs: 18px;
+
+// SMALL SIZE FONTS
+$font-small: 14px;
+$lineHeight-small: 20px;
+
+// MEDIUM SIZE FONTS
+$font-medium: 16px;
+$lineHeight-medium: 24px;
+
+// MEDIUM SIZE FONTS
+$font-xm: 18px;
+$lineHeight-xm: 24px;
+
+// LARGE SIZE FONTS
+$font-large: 24px;
+$lineHeight-large: 32px;
+
+// BUTTON VARIABLES
+$buttonMinWidth: 120px;
+$buttonBorderRadius: 4px;
+$buttonPadding: 12px;
+$disabledButtonOpacity: 0.5;

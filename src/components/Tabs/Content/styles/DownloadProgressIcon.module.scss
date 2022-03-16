@@ -1,0 +1,24 @@
+@import "../../../../scss/main";
+
+.downloadProgressIcon {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: conic-gradient(
+    $color-app-accent var(--progressDeg),
+    $color-stroke-grey var(--progressDeg)
+  );
+  @include flex-full(center, center);
+  &:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: $color-pure-white;
+  }
+  &__content {
+    position: relative;
+  }
+}

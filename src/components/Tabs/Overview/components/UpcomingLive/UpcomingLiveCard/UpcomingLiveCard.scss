@@ -1,0 +1,114 @@
+@import "../../../../../../scss/main.scss";
+
+.UpcomingLiveModal {
+  &__ListItem {
+    position: relative;
+    padding-bottom: 3rem;
+    overflow: visible;
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      border: 1px dashed $color-hr-grey;
+      height: 3rem;
+      width: 0;
+      left: 1.3rem;
+      content: "";
+    }
+  }
+}
+
+.UpcomingLiveCard {
+  display: grid;
+  grid-template-columns: 0.3fr 1.5fr;
+  height: 4.5rem;
+  align-items: center;
+  position: relative;
+  grid-gap: 10px;
+
+  // &:last-child {
+  //   // &::after {
+  //   //   display: none;
+  //   // }
+  // }
+
+  // &::after {
+  //   border: 1px dashed $color-hr-grey;
+  //   height: 3rem;
+  //   width: 0;
+  //   margin-left: 1.3rem;
+  //   content: "";
+  // }
+
+  &__image {
+    position: relative;
+
+    &__date {
+      font-style: normal;
+      @include font-size(13px);
+      @include font-wt(bold);
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-text-black;
+      position: absolute;
+      top: 13px;
+      left: 10px;
+    }
+  }
+
+  &__item1 {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 0.6fr;
+      padding-top: 1rem;
+
+      &__para1 {
+        font-size: $font-small;
+        @include text-ellipsis(2);
+      }
+
+      &__para2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        text-align: right;
+
+        color: $color-app-accent;
+
+        outline: none;
+        border: none;
+
+        background-color: transparent;
+
+        &:disabled {
+          color: #cccccc;
+        }
+      }
+    }
+    &__para {
+      position: absolute;
+      top: 0;
+      text-transform: uppercase;
+      color: $color-text-red;
+    }
+  }
+}
+
+// .verticalLine {
+//   border: 1px dashed $color-hr-grey;
+//   height: 3rem;
+//   width: 0;
+//   margin-left: 1.3rem;
+// }
+
+.disabled {
+  color: $color-hr-grey;
+}

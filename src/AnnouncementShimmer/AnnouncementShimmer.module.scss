@@ -1,0 +1,43 @@
+// @import "../styles/main.scss";
+
+.AnnouncementShimmer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: white;
+
+  &__heading {
+    width: 102px;
+    height: 24px;
+  }
+
+  &__details {
+    display: flex;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    // align-items: center;
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__AllInfo {
+      display: flex;
+      flex-direction: column;
+
+      &__info {
+        height: 20px;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+
+      &__author {
+        width: 119px;
+        height: 21px;
+        margin-top: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.Dropdown {
+  border: 1px solid $color-stroke-grey;
+  border-radius: 4px;
+
+  &__Main {
+    position: relative;
+    @include flex-align(center);
+    justify-content: space-between;
+
+    div {
+      border: none;
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    &--Heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+
+      /* Sub-Text */
+
+      color: #666666;
+    }
+
+    &--Toggle {
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      min-width: 24px;
+      min-height: 24px;
+      max-width: 24px;
+      max-height: 24px;
+
+      transition: background-color 0.5s linear;
+
+      border-radius: 50%;
+
+      &--Verticle {
+        position: absolute;
+
+        transition: transform 0.3s linear;
+
+        &--Show {
+          transform: rotate(0deg);
+        }
+
+        &--Hide {
+          transform: rotate(90deg);
+        }
+      }
+
+      // &--Show {
+      //   background-color: #e5e5e5;
+      // }
+    }
+  }
+
+  &__Extended {
+    // transition: margin-top 0.5s linear,
+    //   max-height 0.5s cubic-bezier(0, 1, 0, 1);
+
+    overflow: auto;
+
+    &--Hide {
+      max-height: 0;
+      transition: padding-top 0.2s cubic-bezier(0, 1, 0, 1),
+        max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    }
+
+    &--Show {
+      max-height: 150px;
+      transition: padding-top 0.3s linear, max-height 0.3s linear;
+
+      padding-top: 8px;
+    }
+  }
+}

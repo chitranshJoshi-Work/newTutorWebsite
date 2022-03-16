@@ -1,0 +1,112 @@
+@import "../../../scss/main.scss";
+
+.ModalWrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  transition: opacity 0.1s linear, z-index 0.1s linear;
+
+  z-index: 100;
+  &__Show {
+    // opacity: 1;
+  }
+
+  &__Hide {
+    // z-index: -1;
+    // opacity: 0;
+  }
+}
+
+.Backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  left: 0;
+  top: 0;
+
+  transition: background-color 0.1s linear;
+
+  &__Show {
+    // z-index: 100;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    // display: block;
+  }
+
+  &__Hide {
+    // z-index: -1;
+    background-color: rgba($color: #000000, $alpha: 0);
+    // display: none;
+  }
+}
+
+.Modal {
+  width: 100vw;
+  background-color: #ffffff;
+
+  position: relative;
+
+  transition: bottom 0.1s linear;
+
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  max-height: 90vh;
+
+  &--Close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  &__Show {
+    bottom: 0;
+    --finalPosition: 0vh;
+    animation: slide-in 0.2s linear;
+  }
+
+  &__Hide {
+    bottom: -100vh;
+  }
+
+  &__Head {
+    display: flex;
+    // flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+    // border-bottom: 1px solid #e5e5e5;
+
+    &--Details {
+      display: block;
+      width: calc(100% - 24px);
+
+      span {
+        margin-right: 8px !important;
+      }
+
+      div {
+        @include flex-align(center);
+      }
+    }
+  }
+
+  &__Body {
+    max-height: 80vh;
+
+    min-height: 26vh; // JISKO SABSE CHOTA MODAL USKI HEIGHT RAKH DENA IDHAR
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    // margin-top: 16px;
+    padding: 16px 16px;
+  }
+}

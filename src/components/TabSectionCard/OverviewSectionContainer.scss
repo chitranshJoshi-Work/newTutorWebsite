@@ -1,0 +1,27 @@
+.OverviewSectionContainer {
+  &__Head {
+    @include flex-justify(space-between);
+
+    &__Button {
+      cursor: pointer;
+      color: $color-app-accent;
+
+      background-color: transparent;
+      border: none;
+      outline: none;
+
+      @include font-small();
+      @include flex-align(center);
+
+      text-align: right;
+
+      svg {
+        margin-left: 6px;
+      }
+    }
+  }
+
+  &__Body {
+    margin-top: 1.2rem;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../../../scss/main";
+
+.RemainingDueDateInstallment {
+  @include flex-dir-col;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 32px;
+
+  &__image {
+    margin-top: 1rem;
+  }
+
+  &__heading {
+    @include customFont($font-medium, $lineHeight-medium, 600);
+    color: $color-text-black;
+  }
+
+  &__subtext {
+    @include customFont($font-small, $lineHeight-medium, normal);
+    color: $color-text-black;
+  }
+
+  &__viewAllInst {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    color: $color-app-accent;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,76 @@
+.BuyNow {
+  &__Container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 17px 16px 24px 16px;
+    background-color: #021927;
+  }
+
+  &__Left {
+    width: 40%;
+
+    &__Top {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: #ffffff;
+    }
+
+    &__Bottom {
+      display: flex;
+      margin-top: 8px;
+      &__OriginalPrice {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: line-through;
+
+        color: #f2f2f2;
+        margin-right: 8px;
+      }
+
+      &__Discount {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        color: #fe9b0e;
+      }
+    }
+  }
+
+  &__Right {
+    display: flex;
+    width: 60%;
+
+    &__Button {
+      width: 100%;
+      background: #009ae0;
+      border-radius: 8px;
+      font-family: openSauceOne;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 12px 56px;
+
+      /* Neutral/N000 */
+
+      color: #fafafa;
+    }
+  }
+}

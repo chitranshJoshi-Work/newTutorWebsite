@@ -1,0 +1,66 @@
+@import "../../../../scss/main";
+
+.AllStates {
+  &__States {
+    @include flex-dir-col;
+    margin-bottom: 5rem;
+
+    &__detail {
+      @include customFont($font-small, $lineHeight-medium, normal);
+      color: $color-text-black;
+      padding-bottom: 1rem;
+    }
+
+    &__heading {
+      @include customFont($font-medium, $lineHeight-medium, bold);
+      color: $color-text-black;
+      padding-bottom: 0.6rem;
+    }
+
+    &__StateList {
+      @include flex-dir-col;
+      gap: 1rem;
+
+      &__item {
+        @include flex-full(space-between, center);
+
+        p {
+          @include customFont($font-medium, $lineHeight-xm, normal);
+          color: $color-text-black;
+        }
+
+        input {
+          accent-color: $color-app-accent;
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  &__ModalFooter {
+    z-index: 100;
+    border-top: 1px solid $color-hr-grey;
+    position: fixed;
+    bottom: 0%;
+    background: $color-pure-white;
+    width: 100%;
+    left: 0;
+    grid-template-columns: 0.1fr 0.6fr 1fr;
+    display: grid;
+    align-items: center;
+    padding: 12px 16px;
+
+    input {
+      accent-color: $color-app-accent;
+    }
+  }
+
+  &__header {
+    @include flex-align(center);
+
+    span {
+      margin-right: 10px !important;
+    }
+  }
+}

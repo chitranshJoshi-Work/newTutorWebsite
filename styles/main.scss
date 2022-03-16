@@ -1,0 +1,27 @@
+@import "../src/components/tabs/Overview/components/Navbar/Navbar.scss";
+@import "../src/components/tabs/Overview/components/OverviewContent/OverView.scss";
+@import "../src/components/tabs/Overview/components/AboutCourse/AboutCourse.scss";
+@import "../src/components/tabs/Overview/components/LikeButton/LikeButton.scss";
+@import "../src/components/tabs/Overview/components/BuyNow/BuyNow.scss";
+@import "../src/components/UIElements/Modal/style.scss";
+@import "../src/components/UIElements/Popup/style.scss";
+@import "../src/components/UIElements/ProfilePlaceholder/style.scss";
+@import "../src/components/UIElements/TabBar/style.scss";
+@import "../src/components/UIElements/BottomNotification/styles.scss";
+@import "../src/components/UIElements/Dropdown/style.scss";
+
+@import "../src/components/Tabs/Overview/components/UpcomingLive/styles.scss";
+@import "../src/components/Tabs/Overview/components/Coupons/Coupons.scss";
+
+@import "../src/components/PhysicalAddress/styles/styles.scss";
+
+@import "../src/shimmer/shimmer.css";
+
+@import "../src/components/PullToRefresh/index.scss";
+@import "../src/components/Tabs/Overview/components/UpcomingLive/UpcomingLiveCard/UpcomingLiveCard.scss";
+@import "../src/components/TabSectionCard/OverviewSectionContainer.scss";
+@import "../src/components/Tabs/LiveClasses/styles/LiveClasses.module.scss";
+@import "../src/components/BottomSheets/components/VideoRestrictionsBottomSheet/VideoRestrictionsBottomSheet.scss";
+@import "../src/components//BottomSheets/components/AboutCourseBottomSheet/AboutCourseBottomSheet.scss";
+@import "../src/components/BottomSheets/components/ApplyCouponBottomSheet/ApplyCouponBottomSheet.scss";
+@import "../src/components/BottomSheets/components/PaymentLoading/PaymentLoader.scss";

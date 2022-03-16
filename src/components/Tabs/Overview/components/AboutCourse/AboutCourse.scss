@@ -1,0 +1,314 @@
+@import "../../../../../scss/main";
+
+.AboutCourse {
+  padding: 16px;
+  background-color: white;
+  width: 100vw;
+  margin: 8px 0 4px 0;
+  &__Heading {
+    font-family: openSauceOne;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3c4852;
+  }
+
+  &__hr {
+    border-bottom: 1px dashed #e5e5e5;
+    height: 0;
+    border-top: none;
+  }
+
+  &__Description {
+    .box {
+      width: 100%;
+
+      // max-height: 162px;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+
+      &__ReadMore {
+        font-family: openSauceOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: $color-app-accent;
+      }
+    }
+
+    .box.open {
+      max-height: 100rem;
+      transition: max-height 0.3s cubic-bezier(0.9, 0, 0.8, 0.2);
+    }
+
+    /* Text */
+    @keyframes open {
+      from {
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+      }
+
+      to {
+        line-clamp: initial;
+        -webkit-line-clamp: initial;
+      }
+    }
+
+    __Headingframes close {
+      from {
+        line-clamp: initial;
+        -webkit-line-clamp: initial;
+      }
+
+      to {
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+      }
+    }
+
+    .text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 12px 0 0 0;
+      animation: close 0.1s linear 0.1s forwards;
+
+      font-family: openSauceOne;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+
+      color: #3c4852;
+      white-space: pre-wrap;
+      @include text-ellipsis(5);
+    }
+
+    .open .text {
+      animation: open 0.1s linear 0s forwards;
+    }
+  }
+}
+
+.WhatElse {
+  background: #fbffec;
+  border: 1px solid #f0ffb6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px;
+
+  &__Heading {
+    font-family: openSauceOne;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    color: #3c4852;
+    margin-bottom: 12px;
+  }
+
+  &__Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+  }
+}
+
+.WhatElseBox {
+  display: flex;
+
+  &__Left {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__Right {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+
+    &__Heading {
+      font-family: openSauceOne;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      display: flex;
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+
+      color: #3c4852;
+    }
+
+    &__Description {
+      font-family: openSauceOne;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 14px;
+
+      color: #7a8b94;
+    }
+  }
+}
+
+.CourseDetails {
+  &__Validity {
+    display: flex;
+    margin-top: 24px;
+
+    &__Left {
+      display: flex;
+      width: 10%;
+
+      img {
+        width: 70%;
+        max-width: 24px;
+      }
+    }
+
+    &__Right {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+
+      &__Heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        display: flex;
+        align-items: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+
+        color: #3c4852;
+      }
+
+      &__Description {
+        margin-top: 4px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        color: #7a8b94;
+      }
+    }
+  }
+
+  &__Material {
+    display: flex;
+    margin: 24px 0;
+
+    &__Left {
+      width: 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__Middle {
+      width: 80%;
+      flex-direction: column;
+
+      &__Heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        display: flex;
+        align-items: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+
+        color: #3c4852;
+      }
+
+      &__Description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        color: #7a8b94;
+      }
+
+      display: flex;
+
+      &__VideoRestrictions {
+        display: flex;
+        margin-top: 8px;
+        align-items: center;
+        svg {
+          width: 10px;
+          height: 10px;
+          stroke: $color-app-accent;
+          path {
+            fill: $color-app-accent;
+          }
+        }
+
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          color: $color-app-accent;
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          margin: 0px 4px;
+        }
+      }
+    }
+
+    &__Right {
+      width: 10%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

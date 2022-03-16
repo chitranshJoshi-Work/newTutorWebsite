@@ -1,0 +1,46 @@
+@import "../../../../scss/main";
+
+.featuredVideo {
+  background: $color-pure-white;
+  margin-bottom: 8px;
+  &__thumbnail {
+    height: 200px;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 4px;
+    @include flex-full(center, center);
+    &__playContainer {
+      @include flex-full(center, center);
+      width: 50px;
+      height: 50px;
+      background: rgba(31, 31, 31, 0.3);
+      border-radius: 2px;
+    }
+    &--exhausted {
+      background-color: $color-overlay-black !important;
+      background-blend-mode: multiply;
+    }
+  }
+  &__info {
+    padding: 16px;
+    &__header {
+      @include flex-justify(space-between);
+      h5 {
+        color: $color-text-black;
+        @include font-small;
+      }
+    }
+    &__description {
+      color: $color-text-grey;
+      @include font-small;
+      margin: 8px 0;
+      &--collapsed {
+        @include text-ellipsis(2);
+      }
+    }
+    p {
+      @include font-xs(600);
+      color: $color-app-accent;
+    }
+  }
+}

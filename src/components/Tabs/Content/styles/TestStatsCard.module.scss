@@ -1,0 +1,79 @@
+@import "../../../../scss/main";
+
+.testStatsCard {
+  &__evalLabel {
+    background-color: #5ab369;
+    padding: 8px;
+    @include flex-full(center, center);
+    color: $color-pure-white;
+    @include font-xs;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  &__separator {
+    margin: 16px 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-stroke-grey;
+  }
+  &__heading {
+    margin-bottom: 8px;
+    @include font-medium(700);
+    color: $color-text-black;
+  }
+  &__card {
+    padding: 8px;
+    background: $color-pure-white;
+    border: 1px solid $color-stroke-grey;
+    box-shadow: 0px 2px 4px $color-stroke-grey;
+    border-radius: 8px;
+    &__cardDetails {
+      @include flex;
+      flex-wrap: wrap;
+      &__item {
+        width: 50%;
+        padding: 8px;
+        &__title {
+          @include font-xs;
+          color: $color-text-grey;
+        }
+        &__content {
+          margin: 6px 0;
+          @include font-large(700);
+          color: $color-text-black;
+          span {
+            @include font-small;
+          }
+        }
+      }
+    }
+    &__testSubmitted {
+      padding: 24px 16px;
+      @include flex-full(center, center);
+      @include flex-dir-col;
+      text-align: center;
+      &__tickIcon {
+        width: 48px;
+        height: 48px;
+        @include flex-full(center, center);
+        background: $color-classplus-blue;
+        border-radius: 50%;
+      }
+      h4 {
+        @include font-xm;
+        color: $color-text-black;
+        margin: 16px 0 6px;
+      }
+      p {
+        @include font-small;
+        color: $color-text-grey;
+        &:nth-of-type(1) {
+          margin: 0 0 16px;
+        }
+      }
+    }
+    &__button {
+      padding: 16px 16px 8px;
+    }
+  }
+}

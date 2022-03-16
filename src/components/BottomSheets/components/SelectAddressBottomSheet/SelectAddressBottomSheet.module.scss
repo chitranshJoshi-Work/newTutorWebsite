@@ -1,0 +1,157 @@
+@import "../../../../scss/main";
+@import "../../../../scss/fonts";
+
+.SelectAddressBottomSheet {
+  @include flex-dir-col;
+  position: relative;
+
+  &__heading {
+    @include customFont($font-medium, $lineHeight-medium, 600);
+    color: $color-text-black;
+    margin-top: 24px;
+    padding-bottom: 20px;
+
+    position: sticky;
+    top: -4px;
+
+    background-color: white;
+  }
+
+  &__subtext {
+    @include customFont($font-small, $lineHeight-medium, normal);
+    color: $color-text-black;
+    span {
+      @include customFont($font-medium, $lineHeight-medium, 600);
+      color: $color-text-black;
+    }
+  }
+
+  &__AddressList {
+    margin-bottom: 80px;
+    &__Address {
+      @include flex-dir-col;
+      background: $color-pure-white;
+      border: 1px solid $color-hr-grey;
+      border-radius: 4px;
+      padding: 12px;
+      margin-bottom: 16px;
+
+      &__heading {
+        @include flex-full(space-between, center);
+        margin-bottom: 16px;
+        h1 {
+          @include customFont($font-medium, $lineHeight-medium, 600);
+          color: $color-text-black;
+        }
+
+        input {
+          width: 18px;
+          height: 18px;
+          accent-color: $color-app-accent;
+        }
+      }
+
+      &__horizontalLine {
+        border: 1px dashed $color-hr-grey;
+      }
+
+      &__detail {
+        @include customFont(12px, 18px, normal);
+        color: $color-text-black;
+        margin-top: 16px;
+      }
+
+      &__MobileNumber {
+        margin-top: 16px;
+        @include customFont(12px, 16px, normal);
+        color: $color-text-grey;
+        span {
+          color: $color-text-black;
+          font-weight: bold;
+        }
+      }
+
+      &__button {
+        margin-top: 16px;
+        @include flex-justify(space-between);
+        button {
+          background: $color-pure-white;
+          border: 1px solid #e9eef2;
+          border-radius: 4px;
+          width: 48%;
+          padding: 8px 0;
+          @include customFont(12px, 18px, 600);
+
+          &:first-child {
+            color: $color-app-accent;
+          }
+          &:last-child {
+            color: $color-text-red;
+          }
+        }
+      }
+    }
+  }
+
+  &__Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 16px;
+
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(242, 242, 242, 0.25);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    grid-gap: 12px;
+
+    &__Default {
+      @include flex-align(center);
+      grid-gap: 4px;
+
+      @include font-small();
+
+      input {
+        width: 14px;
+        height: 14px;
+        accent-color: $color-app-accent;
+      }
+    }
+
+    button {
+      width: fit-content;
+    }
+  }
+}
+
+.DeleteAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-top: 16px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  p {
+    @include font-small();
+    color: #7a8b94;
+
+    text-align: center;
+  }
+
+  button {
+    margin-top: 16px;
+    @include font-small();
+    color: $color-app-accent;
+
+    background-color: none;
+    outline: none;
+    border: none;
+  }
+}

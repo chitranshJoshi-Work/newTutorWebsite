@@ -1,0 +1,21 @@
+@import "../../../scss/main";
+
+.TabShimmer {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+  overflow-x: auto;
+  max-width: 100%;
+  scroll-behavior: smooth;
+  // justify-content: start;
+
+  background-color: $color-pure-white;
+
+  &__item {
+    width: 89px;
+    height: 30px;
+    border-radius: 16px;
+
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../../../scss/main";
+
+.PaymentFailed {
+  @include flex-dir-col;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 32px;
+
+  &__image {
+    margin-top: 1rem;
+  }
+
+  &__heading {
+    @include customFont($font-medium, $lineHeight-medium, 600);
+    color: $color-text-black;
+  }
+
+  &__subtext {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-text-black;
+    text-align: justify;
+    padding: 0 9px;
+  }
+
+  button {
+    margin-bottom: 1rem;
+  }
+}

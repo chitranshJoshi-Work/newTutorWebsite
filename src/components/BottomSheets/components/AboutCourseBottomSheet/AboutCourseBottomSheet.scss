@@ -1,0 +1,28 @@
+.AboutCourseBottomSheet {
+  padding: 16px;
+  background-color: white;
+
+  &__TempModalComponentData {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      font-size: $font-small;
+      line-height: $lineHeight-medium;
+      color: $color-text-black;
+      margin-top: 16px;
+      white-space: pre-wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__Head {
+      font-style: normal;
+      font-weight: bold;
+      font-size: $font-medium;
+      line-height: $lineHeight-medium;
+      color: $color-text-black;
+      /* identical to box height, or 150% */
+    }
+  }
+}

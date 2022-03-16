@@ -1,0 +1,49 @@
+.TabBar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+
+  position: sticky;
+  top: -0.5px;
+
+  z-index: 2;
+
+  &__List {
+    display: flex;
+    align-items: center;
+
+    padding: 12px 8px;
+    // border-bottom: 1px solid #000;
+
+    overflow-x: auto;
+    max-width: 100%;
+
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--Item {
+      padding: 4px 8px;
+      border: 1px solid #f2f2f2;
+      border-radius: 16px;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+
+      color: #3c4852;
+
+      margin-right: 8px;
+
+      text-transform: capitalize;
+
+      white-space: nowrap;
+    }
+  }
+}

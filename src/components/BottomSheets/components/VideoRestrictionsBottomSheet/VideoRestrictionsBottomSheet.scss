@@ -1,0 +1,20 @@
+@import "../../../../scss/main";
+
+.VideoRestrictions {
+  &__item {
+    &__heading {
+      @include customFont($font-small, $lineHeight-medium, 600);
+      color: $color-text-black;
+    }
+    &__list {
+      @include customFont($font-small, 150%, normal);
+      color: $color-text-black;
+      padding: 1.5rem;
+      @include flex-dir-col;
+
+      li:first-child {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

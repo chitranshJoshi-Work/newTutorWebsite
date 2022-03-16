@@ -1,0 +1,133 @@
+@import "../../../../scss/main";
+
+.contentList {
+  background: $color-pure-white;
+  padding: 16px;
+  h1 {
+    color: $color-text-black;
+    @include font-medium(700);
+  }
+  &__item {
+    @include flex;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $color-stroke-grey;
+    &__thumbnail {
+      @include flex-full(center, center);
+      position: relative;
+      width: 80px;
+      height: 60px;
+      background: rgba(23, 115, 234, 0.04);
+      border-radius: 4px;
+      min-width: 80px;
+      background-size: cover !important;
+      background-position: center !important;
+      &--exhausted {
+        opacity: 0.4;
+      }
+      &__playIcon {
+      }
+      &__durationBar {
+        height: 14px;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+        padding: 0 4px;
+        background: rgba(0, 0, 0, 0.87);
+        @include flex-full(center, center);
+        @include font-xxs(500);
+        border-radius: 2px;
+        color: $color-pure-white;
+      }
+    }
+    &__content {
+      width: 100%;
+      @include flex-justify(space-between);
+      padding: 2px;
+      margin-left: 14px;
+      &__text {
+        @include flex-dir-col;
+        @include flex-justify(space-between);
+      }
+      p {
+        @include font-small;
+        @include text-ellipsis(1);
+        color: $color-text-black;
+      }
+      &__scheduled {
+        @include font-xs;
+        color: $color-text-grey;
+      }
+      &__attempts {
+        @include font-xs;
+        color: $color-text-grey;
+        span {
+          color: $color-text-black;
+        }
+      }
+      &__limits {
+        div {
+          @include font-xs;
+          @include flex-align(center);
+          margin: 2px 0;
+          column-gap: 5px;
+          color: $color-text-black;
+          span {
+            color: $color-pure-black;
+          }
+        }
+        &__exhausted {
+          padding: 2px 4px;
+          @include flex-full(center, center);
+          font-size: $font-xxs !important;
+          background: #8ef6a0;
+          border-radius: 2px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          // height: 16px;
+          // width: 106px;
+        }
+      }
+      &__marks {
+        @include flex-align(center);
+        p {
+          margin-left: 5px;
+          @include font-xs;
+          color: $color-text-grey;
+          span {
+            color: $color-text-black;
+          }
+        }
+      }
+      &__folderDetails {
+        margin: 8px 0;
+        @include font-xs;
+        color: $color-text-black;
+        span {
+          color: $color-pure-black;
+        }
+      }
+      &__freeContentEmblem {
+        width: fit-content;
+        padding: 2px 4px;
+        border-radius: 2px;
+        @include font-xxs;
+        @include flex-full(center, center);
+      }
+      &__button {
+        margin-left: 16px;
+        @include flex-dir-col;
+        @include flex-full(space-between, flex-end);
+        &__attempts {
+          @include font-xs;
+          color: $color-text-red;
+          span {
+            color: $color-text-black;
+          }
+          &--unlimited {
+            color: $color-text-grey;
+          }
+        }
+      }
+    }
+  }
+}

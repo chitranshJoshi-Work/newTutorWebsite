@@ -1,0 +1,137 @@
+{
+  "components": {
+    "bottomSheets": {
+      "components": {
+        "aboutCourseBottomSheet": {
+          "aboutThisCourse": "About this Course"
+        },
+        "applyCouponBottomSheet": {
+          "apply": "APPLY",
+          "applyCoupons": "Apply Coupons",
+          "couponlist": "couponlist",
+          "enterCouponCode": "Enter a coupon code",
+          "remove":"REMOVE"
+        },
+        "contentLockedBottomSheet": {
+          "buyNow": "Buy now",
+          "contentIsLocked": "Content is Locked",
+          "courseVideoLocked": "The video you’re trying to open is locked. Buy the course for complete access."
+        },
+        "courseLockedBottomSheet": {
+          "courseLocked": "Uh oh, course locked!",
+          "lockedIcon": "lockedIcon",
+          "payPendingInstalments": "Pay Pending Instalment",
+          "payPendingInstalmentsToUnlockCourse": "Pay your pending instalments to unlock and access your course now."
+        },
+        "dueDatePaymentBottomSheet": {
+          "paySecondInstalmentOtherwiseLocked": "Pay your 2nd instalment now to keep learning, otherwise your course will be locked.",
+          "rupeeIcon": "RupeeIcon",
+          "viewAllInstalment": "View All Instalments"
+        },
+        "expirySoonBottomSheet": {
+          "clockIcon": "ClockIcon",
+          "continueLearning": "Continue Learning",
+          "courseEndingOn": "Your course is ending on",
+          "exploreSimilarCourses": "Explore similar courses",
+          "finishSoon": "Finish soon."
+        },
+        "likeWhatAreYourWatchingBottomSheet": {
+          "buyNow": "Buy now",
+          "goBackInstead": "Go back instead",
+          "LikeWhatYouAreWatching": "Like what you are watching?",
+          "limitedPeriodOver": "Your 2 minutes of limted preview is over. To get access to all course contents and continue with your learning seamlessly."
+        },
+        "paymentFailedBottomSheet": {
+          "paymentFailed": "Payment failed!",
+          "paymentNotCompleted": "Your payment for this course could not be completed. Please retry again. Don’t worry in case money has been deducted from your account. They are safe.",
+          "retryPayments": "Retry Payments",
+          "rupeeIcon": "RupeeIcon"
+        },
+        "paymentProcessingBottomSheet": {
+          "paymentProcessing": "Payment Processing",
+          "paymentUnderProcessing": "Your payment is currently under processing. Please wait for sometime."
+        },
+        "paymentSuccessfullBottomSheet": {
+          "congratulations": "Congratulations!",
+          "couponSuccess": "CouponSuccess",
+          "youhavePaidFirstInstallment": "You have paid your 1st instalment for"
+        },
+        "runningTightOnBudgetBottomSheet": {
+          "buyThisCourse": "Buy this course in 3 instalments and start learning now.",
+          "payInInstalments": "Pay in Instalments",
+          "runningTightOnBudget": "Running tight on budget?",
+          "rupeeIcon": "rupeeIcon"
+        },
+        "selectAddressBottomSheet": {
+          "address": "Address",
+          "delete": "Delete",
+          "edit": "Edit",
+          "locationIcon": "locationIcon",
+          "phoneNumber": "Phone Number:",
+          "savedAddress": "Saved Addresses",
+          "selectAddress": "Select Address",
+          "studyMaterialShipped": "Your Study materials will be shipped to this address"
+        },
+        "selectStateBottomSheet": {
+          "allStateUnionTerritories": "All States/Union Territories",
+          "gstPaymentInvoice": "We require this to send you a GST payment invoice.",
+          "locationIcon": "locationIcon",
+          "proceedToPayment": "Proceed to Payment",
+          "selectState": "Select State",
+          "setAsDefault": "Set as default"
+        },
+        "shareCourseBottomSheet": {
+          "copy": "COPY",
+          "Instagram": "Instagram",
+          "moreApps": "More Apps",
+          "moreAppsAlt": "MoreAppsAlt",
+          "OR": "OR",
+          "shareCourseVia": "Share Course Via",
+          "Telegram": "Telegram",
+          "whatsapp": "WhatsApp"
+        },
+        "testIsLockedBottomSheet": {
+          "buyNow": "Buy now",
+          "goBackInstead": "Go back instead",
+          "testIsLocked": "Test is Locked",
+          "testLockedBuyCourse": "The test you’re trying to attempt is locked. Buy the course for complete access."
+        },
+        "testIsTemporarilyLockedBottomSheet": {
+          "okay": "Okay",
+          "testIsLockedByTutor": "The test you’re trying to attempt has been locked by your tutor. Please get in touch with your tutor.",
+          "testIsTemporarilyLocked": "Test is Temporarily Locked"
+        },
+        "testIsTemporarilyLockedTimingBottomSheet": {
+          "okay": "Okay",
+          "testIsLockedByTutor": "The test you’re trying to attempt has been locked by your tutor. Please get in touch with your tutor.",
+          "testIsTemporarilyLocked": "Test is Temporarily Locked"
+        },
+        "upcomingLiveCard": {
+          "upcomingLiveCard": {
+            "joinClass": "Join Class"
+          }
+        },
+        "upcomingLiveClassBottomSheet": {
+          "upcomingLiveClasses": "Upcoming Live Classes"
+        },
+        "viewsExhausted": {
+          "buyNow": "Buy now",
+          "goBackInstead": "Go back instead",
+          "viewsExhausted": "Views Exhausted",
+          "youExhaustedWatchLimit": "You have exhausted the watch limit set by your tutor for this video. Buy this course now to continue your learning."
+        }
+      }
+    },
+    "tabs": {
+      "overview": {
+        "components": {
+          "aboutCourse": {
+            "aboutThisCourse": {
+              "heading": "About This Course"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,348 @@
+.HomeShimmer {
+  display: block;
+  /* width: 90vw; */
+  padding: 60px 10%;
+  /* background-color: #aaaaaa; */
+}
+
+.HomeShimmer__Banner {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+
+  /* background-color: #aaaaaa; */
+}
+
+.HomeShimmer__Banner--Item {
+  margin: 24px 12px;
+  display: block;
+  width: fit-content;
+  background-color: #aaaaaa;
+  width: 500px;
+  height: 300px;
+}
+
+.HomeShimmer__Trending {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  /* background-color: #aaaaaa; */
+}
+
+.HomeShimmer__Trending--Item {
+  display: block;
+  width: 300px;
+  height: 130px;
+
+  margin: 24px 12px;
+  /* background-color: #aaaaaa; */
+}
+
+.HomeShimmer__CourseList {
+  display: block;
+  width: 100%;
+
+  /* width: calc(100% - 32px); */
+  /* padding: 24px 16px; */
+}
+
+.HomeShimmer__CourseList--Top {
+  display: flex;
+  width: calc(100% - 24px);
+  justify-content: space-between;
+
+  padding: 16px 12px;
+}
+
+.HomeShimmer__CourseList--Top--YouMay {
+  color: rgba(0, 0, 0, 0.7);
+}
+.HomeShimmer__CourseList--Top--View {
+  color: #009ae9;
+}
+.HomeShimmer__CourseList--Body {
+  display: flex;
+  justify-content: space-between;
+}
+.HomeShimmer__CourseList--Body--Item {
+  display: block;
+  width: fit-content;
+
+  width: 250px;
+  height: 200px;
+
+  margin: 12px;
+}
+
+.HomeShimmer__Download {
+  display: flex;
+  justify-content: space-around;
+  /* width: fit-content; */
+  background-color: #009ae9;
+
+  padding: 16px 0;
+  margin: 16px 12px;
+}
+
+.HomeShimmer__Download--Left {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.HomeShimmer__Download--Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.HomeShimmer__Download--Right--Row {
+  margin: 12px;
+  display: block;
+  width: 400px;
+  height: 50px;
+}
+
+.courseShimmer {
+  display: block;
+  padding: 60px 10% 0;
+
+  overflow-y: hidden;
+}
+.courseShimmer__Body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.courseShimmer__Body--Left {
+  padding: 0 16px 0 0;
+}
+.courseShimmer__Body--Left--Top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 24px 10%;
+  background: linear-gradient(90deg, #f3faff 0%, rgba(238, 247, 254, 0) 100%);
+}
+
+.courseShimmer__Body--Left--Top--Item {
+  margin: 12px;
+  display: block;
+  max-width: 400px;
+  height: 40px;
+}
+.courseShimmer__Body--Left--Bottom {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 250px !important;
+  padding-top: 24px;
+  height: 60vh;
+}
+
+.courseShimmer__Body--Left--Bottom--Item {
+  margin: 12px;
+  display: block;
+  max-width: 400px;
+  height: 80px;
+}
+
+.courseShimmer__Body--Right {
+}
+.courseShimmer__Body--Right--CourseOverview {
+  display: block;
+  width: 250px;
+  height: 350px;
+}
+
+.detailsShimmer {
+  padding: 60px 10%;
+}
+
+.detailsShimmer__Courses {
+  padding: 16px 0;
+}
+
+.detailsShimmer__Courses__Top {
+  padding: 0 12px;
+}
+.detailsShimmer__Courses__Body {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 16px;
+}
+
+.detailsShimmer__Courses__Body--Item {
+  display: block;
+  /* width: fit-content; */
+
+  width: 250px;
+  height: 200px;
+
+  margin: 12px !important;
+}
+
+@media (max-width: 700px) {
+  /* course */
+  .courseShimmer {
+    padding: 24px 16px;
+  }
+  .courseShimmer__Body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .courseShimmer__Body--Left--Top {
+    padding: 24px 0;
+  }
+  .courseShimmer__Body--Left--Bottom {
+    display: none;
+  }
+  .courseShimmer__Body--Right {
+    /* width: 100vw; */
+  }
+  .courseShimmer__Body--Right--CourseOverview {
+    width: -webkit-fill-available;
+  }
+
+  /* course */
+
+  /* Home */
+
+  .HomeShimmer {
+    padding: 24px 16px;
+  }
+
+  .HomeShimmer__Banner {
+    display: flex;
+
+    overflow-x: hidden;
+  }
+
+  .HomeShimmer__Banner--Item {
+    min-width: calc(100% - 24px) !important;
+    height: 200px;
+  }
+
+  .HomeShimmer__Trending {
+    overflow-x: hidden;
+  }
+  .HomeShimmer__Trending--Item {
+    min-width: calc(100% - 24px);
+  }
+
+  .HomeShimmer__CourseList--Body {
+    flex-direction: column;
+    max-height: 25vh;
+    overflow-y: hidden;
+  }
+  .HomeShimmer__CourseList--Body--Item {
+    min-width: calc(100% - 24px);
+    min-height: 100px !important;
+  }
+  .HomeShimmer__Download {
+    display: none;
+  }
+  /* Home */
+
+  /* Details */
+
+  .detailsShimmer {
+    padding: 24px 16px;
+  }
+
+  .detailsShimmer__Courses__Body {
+    flex-direction: column;
+    max-height: 116px;
+    overflow: hidden;
+  }
+
+  .detailsShimmer__Courses__Body--Item {
+    min-width: calc(100% - 24px);
+    min-height: 100px;
+  }
+
+  /* Details */
+}
+.boxShadow {
+  /* background: #ffffff; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  margin: 24px 0;
+}
+
+/* EFFECt */
+.shine {
+  background: #eeeeee;
+  background-image: linear-gradient(
+    to right,
+    #bbbbbb 0%,
+    #edeef1 20%,
+    #bbbbbb 40%,
+    #bbbbbb 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  display: inline-block;
+  position: relative;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+.buyNowShine {
+  background: var(--appAccentColor) -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--appAccentColor)),
+      to(var(--appAccentColor)),
+      color-stop(0.5, rgba(255, 255, 255, 0.5))
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 200px;
+
+  animation-name: chrome;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+  animation-timing-function: linear;
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@-webkit-keyframes chrome {
+  0% {
+    background-position: -1000px;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+/* EFFECt */

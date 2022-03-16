@@ -1,0 +1,92 @@
+@import "../../../../scss/main";
+
+.LiveClasses {
+  &__Search {
+    background: $color-pure-white;
+    padding: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+
+    margin-bottom: 8px;
+  }
+
+  &__List {
+    background: $color-pure-white;
+    // padding: 16px;
+  }
+}
+
+.Dots {
+  position: relative !important;
+  bottom: 0 !important;
+
+  align-items: center !important;
+
+  li {
+    margin: 0 !important;
+  }
+
+  li button {
+    padding: 0 !important;
+  }
+
+  li button::before {
+    // width: 20px;
+    // height: 20px;
+    // content: "•";
+    // text-align: center;
+    opacity: 0.6 !important;
+    color: #000000 !important;
+  }
+
+  li.slick-active button::before {
+    opacity: 1 !important;
+  }
+}
+
+.CourseRecordings {
+  background: $color-pure-white;
+  padding: 16px;
+
+  h1 {
+    color: $color-text-black;
+    @include customFont($font-medium, $lineHeight-medium, 700);
+  }
+
+  &__Item {
+    @include flex;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $color-stroke-grey;
+
+    &__Content {
+      width: 100%;
+      @include flex-justify(space-between);
+      padding: 2px;
+      margin-left: 14px;
+
+      &__text {
+        @include flex-dir-col;
+        @include flex-justify(space-between);
+      }
+      p {
+        @include font-small;
+        @include text-ellipsis(2);
+        color: $color-text-black;
+      }
+
+      &__Details {
+        @include flex-full(flex-start, center);
+
+        span {
+          font-style: normal;
+          @include customFont($font-small, $lineHeight-xxs, normal);
+          color: $color-text-grey;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import "../../../../scss/main";
+
+.AnnouncementsContainer {
+  background-color: $color-pure-white;
+  min-height: 90vh;
+  padding: 0 16px 16px 16px;
+}
+
+.Announcements {
+  margin-top: 8px;
+
+  &__InputBox {
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    margin-bottom: 8px;
+    background-color: $color-pure-white;
+    padding: 16px;
+  }
+}
+
+.AnnouncedCard {
+  &__Header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 16px;
+    color: #3c4852;
+  }
+
+  &__Body {
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #f2f2f2;
+    width: 100vw;
+
+    &__Left {
+      width: 10vw;
+      text-align: left;
+    }
+
+    &__Right {
+      display: flex;
+      flex-direction: column;
+      width: 85vw;
+
+      &__Description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #3c4852;
+        white-space: pre-line;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      &__Name {
+        margin-top: 4px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height, or 150% */
+
+        color: #7a8b94;
+      }
+
+      &__Attachments {
+        margin-top: 8px;
+        display: flex;
+
+        align-items: center;
+
+        &__icon {
+          margin-right: 8px;
+        }
+
+        &__text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          /* identical to box height, or 133% */
+
+          color: #009ae0;
+        }
+      }
+    }
+  }
+}
+
+.noContentScreen {
+  width: 100%;
+  height: 100%;
+  @include flex-dir-col;
+  @include flex-full(center, center);
+  text-align: center;
+  padding: 8px;
+
+  h4 {
+    margin: 16px 0 8px;
+    @include font-medium(600);
+    color: $color-text-black;
+  }
+
+  p {
+    @include font-small;
+    color: $color-text-grey;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../../scss/main";
+
+.noContentScreen {
+  width: 100%;
+  height: 100%;
+  @include flex-dir-col;
+  @include flex-full(center, center);
+  text-align: center;
+  padding: 8px;
+  h4 {
+    margin: 16px 0 8px;
+    @include font-medium(600);
+    color: $color-text-black;
+  }
+  p {
+    @include font-small;
+    color: $color-text-grey;
+  }
+}

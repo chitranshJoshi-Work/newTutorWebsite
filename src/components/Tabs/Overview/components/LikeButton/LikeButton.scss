@@ -1,0 +1,75 @@
+@import "../../../../../scss/main";
+
+@keyframes increasehand {
+  0% {
+    transform: rotate(0deg) scale(1) skew(0deg);
+    transform-origin: 0 0;
+    width: 110%;
+  }
+
+  50% {
+    transform: rotate(-15deg) scale(1.2) skew(0deg);
+    transform-origin: bottom left;
+    width: 70%;
+  }
+  // 70% {
+  //   transform: rotate(0deg) scale(1) skew(0deg);
+  //   transform-origin: bottom right;
+  //   width: 80%;
+  // }
+  100% {
+    transform: rotate(0deg) scale(1) skew(0deg);
+    transform-origin: 0 0;
+    width: 110%;
+  }
+}
+
+.like--div {
+  height: 30px;
+
+  &--img {
+    width: 24px !important;
+
+    // transition: mymove 2.3s linear;
+    // animation-duration: 3s;
+    // animation-name: mymove;
+    // animation-iteration-count: infinite;
+    // scale: 1.5;
+  }
+
+  &--img--2 {
+    // animation: increasehand 1s ease 0.1s normal normal;
+    animation-duration: 1s;
+    animation-name: increasehand;
+    animation-iteration-count: 1;
+    width: 24px !important;
+  }
+
+  &--animated {
+    width: 30px !important;
+    margin-top: -6px;
+    // animation-duration: 3s;
+    // animation-name: mymove;
+    // animation-iteration-count: infinite;
+  }
+}
+
+.like--text.done {
+  color: $color-app-accent;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.like--text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+
+  color: #7a8b94;
+}
